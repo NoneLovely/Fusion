@@ -13,12 +13,11 @@
         <style>
             body {
                 font-family: 'Rubik', sans-serif;
-                background-image: url(https://i.postimg.cc/TYbq3m2s/wave-background-1.png);
-                background-size: 100% 100%;
+                background: linear-gradient(153deg, rgba(90,190,151,0.4980043042607668) 0%, rgba(0,0,0,1) 50%, rgba(90,190,151,0.49520318381258754) 100%);
             }
         </style>
     </head>
-    <body class="bg-emerald-600 font-bold p-5 sm:px-20">
+    <body class="bg-black font-bold p-5 sm:px-20">
         
         <div class="items-center justify-center py-2.5 rounded-b-3xl w-full h-full shadow-2xl sm:hidden">
             <div class=" items-center justify-center flex w-full h-full">
@@ -30,7 +29,7 @@
             </div>
         </div>
 
-        <div class="items-center py-2.5 rounded-b-3xl w-full h-full shadow-2xl hidden sm:block">
+        <div id="bg" class="items-center py-2.5 rounded-b-3xl w-full h-full shadow-2xl hidden sm:block">
             <div class=" items-center flex w-full h-full">
                 <img src="https://i.postimg.cc/JhWTHRxd/logo.png" class="w-20"/>
                 <div class="ml-auto mr-2.5">
@@ -42,17 +41,17 @@
             </div>
         </div>
         
-        <div id="data-1" class="mt-20 py-8 border-t border-emerald-300 justify-center shadow-2xl py-2.5 rounded-t-3xl flex w-full h-full">
+        <div id="data-1" class="mt-20 py-8 border-emerald-300 justify-center shadow-2xl py-2.5 rounded-t-3xl flex w-full h-full">
             <h1 class="text-white text-4xl">О нас</h1>
         </div>
 
-        <div id="data" class="pb-10 mt-5 border-b border-emerald-300 items-center shadow-2xl justify-center text-center px-5 p-2.5 rounded-b-3xl w-full h-full">
+        <div id="data" class="pb-10 mt-5 border-emerald-300 items-center shadow-2xl justify-center text-center px-5 p-2.5 rounded-b-3xl w-full h-full">
             <div class="justify-center w-full">
-                <div class="mt-10 border-t border-emerald-300 items-center shadow-2xl py-5 bg-black bg-opacity-25 rounded-t-xl flex w-full h-full">
+                <div class="mt-10 border-emerald-300 items-center shadow-2xl py-5 bg-black bg-opacity-25 rounded-t-xl flex w-full h-full">
                         <img src="https://i.postimg.cc/JhWTHRxd/logo.png" class="w-20"/>
                         <p class="-ml-4 text-white text-3xl">FUSION</p>
                 </div>
-                <div class="mt-5 border-b border-emerald-300 items-center shadow-2xl px-5 py-5 bg-black bg-opacity-25 rounded-b-xl flex w-full h-full">
+                <div class="mt-5 border-emerald-300 items-center shadow-2xl px-5 py-5 bg-black bg-opacity-25 rounded-b-xl flex w-full h-full">
                     <p class="text-white text-xl">
                         описание описание описание описание
                         описание описание описание описание
@@ -64,31 +63,31 @@
             </div>
         </div>
 
-        <div id="store-1" class="mt-20 py-8 border-t border-emerald-300 justify-center shadow-2xl py-2.5 rounded-t-3xl flex w-full h-full">
+        <div id="store-1" class="mt-20 py-8 border-emerald-300 justify-center shadow-2xl py-2.5 rounded-t-3xl flex w-full h-full">
             <h1 class="text-white text-4xl">Мероприятия</h1>
         </div>
 
-        <div id="store" class="pb-10 mt-5 border-b border-emerald-300 items-center shadow-2xl justify-center text-center px-5 p-2.5 rounded-b-3xl w-full h-full">
+        <div id="store" class="pb-10 mt-5border-emerald-300 items-center shadow-2xl justify-center text-center px-5 p-2.5 rounded-b-3xl w-full h-full">
             
         </div>
 
-        <div id="help-1" class="mt-20 py-8 border-t border-emerald-300 justify-center shadow-2xl py-2.5 rounded-t-3xl flex w-full h-full">
+        <div id="help-1" class="mt-20 py-8 border-emerald-300 justify-center shadow-2xl py-2.5 rounded-t-3xl flex w-full h-full">
             <h1 class="text-white text-4xl">Поддержка</h1>
         </div>
 
-        <div id="help" class="mt-5 border-b border-emerald-300 shadow-2xl items-center justify-center flex py-10 rounded-b-3xl w-full h-full">
+        <div id="help" class="mt-5 border-emerald-300 shadow-2xl items-center justify-center flex py-10 rounded-b-3xl w-full h-full">
             <div class="w-5/6 sm:w-1/2">
-                <input id="name" class="mt-4 text-white shadow-2xl border-t border-b border-emerald-300 bg-black bg-opacity-25 py-2.5 px-2.5 rounded-xl w-full " placeholder="имя"/>
-                <textarea id="text" class="mt-4 text-white shadow-2xl border-t border-b border-emerald-300 bg-black bg-opacity-25 py-2.5 px-2.5 rounded-xl w-full " placeholder="сообщение"></textarea>
-                <button id="btnsend" class="mt-2.5 text-white shadow-2xl border-t border-b border-emerald-300 bg-black bg-opacity-25 py-2.5 px-2.5 rounded-xl w-full hover:bg-opacity-10"> отправить </button>
+                <input id="name" class="mt-4 text-white shadow-2xl border-emerald-300 bg-black bg-opacity-25 py-2.5 px-2.5 rounded-xl w-full " placeholder="имя"/>
+                <textarea id="text" class="mt-4 text-white shadow-2xl border-emerald-300 bg-black bg-opacity-25 py-2.5 px-2.5 rounded-xl w-full " placeholder="сообщение"></textarea>
+                <button id="btnsend" class="mt-2.5 text-white shadow-2xl border-emerald-300 bg-black bg-opacity-25 py-2.5 px-2.5 rounded-xl w-full hover:bg-opacity-10"> отправить </button>
             </div>
         </div>
 
-        <div id="contacts-1" class="mt-20 py-8 border-t border-emerald-300 justify-center shadow-2xl py-2.5 rounded-t-3xl flex w-full h-full">
+        <div id="contacts-1" class="mt-20 py-8 border-emerald-300 justify-center shadow-2xl py-2.5 rounded-t-3xl flex w-full h-full">
             <h1 class="text-white text-4xl">Контакты</h1>
         </div>
 
-        <div id="contacts" class="mt-5 border-b border-emerald-300 shadow-2xl items-center justify-center px-5 py-10 rounded-b-3xl w-full h-full">
+        <div id="contacts" class="mt-5 border-emerald-300 shadow-2xl items-center justify-center px-5 py-10 rounded-b-3xl w-full h-full">
             <div class="justify-center w-full">
                 <div class="mt-5 items-center shadow-2xl px-5 py-5 bg-black bg-opacity-25 flex rounded-xl w-full h-full">
                     <p class="text-white text-xl">telegram: @username</p>
