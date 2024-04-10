@@ -8,13 +8,13 @@ $.get(url, function (data, status) {
             store.className = "justify-center w-full"
 
             store.innerHTML = `
-            <div class="mt-10 border-t border-emerald-300 items-center shadow-2xl py-5 bg-black bg-opacity-25 rounded-t-xl flex w-full h-full">
+            <div class="mt-10 border-emerald-300 items-center shadow-2xl py-5 bg-black bg-opacity-25 rounded-t-xl flex w-full h-full">
                 <img src="https://i.postimg.cc/JhWTHRxd/logo.png" class="w-20"/>
                 <p class="-ml-4 text-white text-3xl">` + result[i][0] +`</p>
                 <a class="ml-auto mr-2 py-2.5 px-3 text-white rounded-xl text-xl hover:text-emerald-400 hidden sm:block" href="` + result[i][2] +`"> купить билет <i class="fi fi-sr-shopping-cart"></i></a>
                 <a class="ml-auto mr-2 py-2.5 px-3 text-white rounded-xl text-xl hover:text-emerald-400 sm:hidden" href="` + result[i][2] +`"><i class="fi fi-sr-shopping-cart"></i></a>
             </div>
-            <div class="mt-5 border-b border-emerald-300 items-center shadow-2xl px-5 py-5 bg-black bg-opacity-25 rounded-b-xl flex w-full h-full">
+            <div class="mt-5 border-emerald-300 items-center shadow-2xl px-5 py-5 bg-black bg-opacity-25 rounded-b-xl flex w-full h-full">
                 <p class="text-white text-xl">` + result[i][1] +`</p>
             </div>`
                       
